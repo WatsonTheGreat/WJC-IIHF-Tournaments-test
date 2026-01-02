@@ -4,6 +4,7 @@ const boxes = document.querySelectorAll(".tournament-box");
 boxes.forEach(box => {
     box.addEventListener("click", () => {
         const year = yearSelector.value;
+        const section = box.getElementById("section")
         const target = box.dataset.link;
 
         // Example folder structure:
