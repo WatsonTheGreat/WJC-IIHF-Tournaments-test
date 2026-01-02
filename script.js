@@ -11,6 +11,6 @@ boxes.forEach(box => {
         // /WJC/2026/index.html
         // /Mens/2027/groups.html
 
-        window.location.href = `./${target}/${year}/index.html`;
+        window.location.href = `./${section}/${year}/${target}.html`;
     });
 });
