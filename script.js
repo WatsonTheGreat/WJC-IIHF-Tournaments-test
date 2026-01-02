@@ -1,16 +1,19 @@
-const yearSelector = document.getElementById("yearSelector");
-const boxes = document.querySelectorAll(".tournament-box");
+document.addEventListener("DOMContentLoaded", () => {
+    const yearSelector = document.getElementById("yearSelector");
+    const boxes = document.querySelectorAll(".tournament-box");
 
-boxes.forEach(box => {
-    box.addEventListener("click", () => {
-        const year = yearSelector.value;
-        const section = box.dataset.section;
-        const target = box.dataset.link;
+    console.log("Boxes found:", boxes.length); // DEBUG LINE
 
-        // Example folder structure:
-        // /WJC/2026/index.html
-        // /Mens/2027/groups.html
+    boxes.forEach(box => {
+        box.addEventListener("click", () => {
+            const year = yearSelector.value;
+            const section = box.dataset.section;
+            const target = box.dataset.link;
 
-        window.location.href = `./${section}/${year}/${target}.html`;
+            const url = `./${section}/${year}/${target}.html`;
+            console.log("Going to:", url); // DEBUG LINE
+
+            window.location.href = url;
+        });
     });
 });
