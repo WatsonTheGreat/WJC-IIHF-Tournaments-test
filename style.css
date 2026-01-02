@@ -153,3 +153,36 @@ body {
     font-size: 13px;
     color: #666;
 }
+/* ======================
+   YEAR SELECTOR
+====================== */
+
+.year-selector {
+    margin-left: auto;
+    padding: 6px 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    border-radius: 6px;
+    border: none;
+
+    background: white;
+    color: #0b4ea2;
+
+    cursor: pointer;
+}
+
+/* ======================
+   CLICKABLE BOXES
+====================== */
+
+.tournament-box {
+    text-decoration: none;
+    color: #0b4ea2;
+    cursor: pointer;
+}
+
+.tournament-box:hover {
+    background: #eaf1ff;
+}
