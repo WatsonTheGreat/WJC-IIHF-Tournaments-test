@@ -7,66 +7,75 @@
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="site-header">
-        <img src="IIHF-logo.png" alt="IIHF Logo" class="iihf-logo">
-        <div class="header-text">
-            <h1>IIHF Hockey Tournaments</h1>
-            <p>World Championships • Olympics • U20</p>
+<!-- HEADER -->
+<header class="site-header">
+    <img src="IIHF-logo.png" alt="IIHF Logo" class="iihf-logo">
+    <div class="header-text">
+        <h1>IIHF Hockey Tournaments</h1>
+        <p>World Championships • Olympics • U20</p>
+    </div>
+
+    <!-- YEAR SELECTOR -->
+    <select id="yearSelector" class="year-selector">
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+    </select>
+</header>
+
+<!-- MAIN -->
+<main class="container">
+
+    <!-- WJC -->
+    <section class="tournament-card">
+        <h2>World Junior Championship</h2>
+        <p class="subtitle">U20 Tournament</p>
+
+        <div class="tournament-grid">
+            <a class="tournament-box" data-link="wjc">Group Stage</a>
+            <a class="tournament-box" data-link="wjc-playoffs">Playoffs</a>
         </div>
-    </header>
+    </section>
 
-    <!-- MAIN CONTENT -->
-    <main class="container">
+    <!-- MEN -->
+    <section class="tournament-card">
+        <h2>Men’s World Championship</h2>
+        <p class="subtitle">Elite Tournament</p>
 
-        <!-- TOURNAMENT CARD -->
-        <section class="tournament-card">
-            <h2>World Junior Championship 2026</h2>
-            <p class="subtitle">Group Stage • Playoffs</p>
+        <div class="tournament-grid">
+            <a class="tournament-box" data-link="mens">Groups</a>
+            <a class="tournament-box" data-link="mens-playoffs">Playoffs</a>
+        </div>
+    </section>
 
-            <div class="tournament-grid">
-                <div class="tournament-box">Group A</div>
-                <div class="tournament-box">Group B</div>
-                <div class="tournament-box">Playoffs</div>
-            </div>
-        </section>
+    <!-- WOMEN -->
+    <section class="tournament-card">
+        <h2>Women’s World Championship</h2>
+        <p class="subtitle">Top Division</p>
 
-        <section class="tournament-card">
-            <h2>Men’s World Championship</h2>
-            <p class="subtitle">Elite Tournament</p>
+        <div class="tournament-grid">
+            <a class="tournament-box" data-link="womens">Groups</a>
+            <a class="tournament-box" data-link="womens-playoffs">Playoffs</a>
+        </div>
+    </section>
 
-            <div class="tournament-grid">
-                <div class="tournament-box">Groups</div>
-                <div class="tournament-box">Playoffs</div>
-            </div>
-        </section>
+    <!-- OLYMPICS -->
+    <section class="tournament-card olympics">
+        <h2>Olympic Ice Hockey</h2>
+        <p class="subtitle">International Tournament</p>
 
-        <section class="tournament-card">
-            <h2>Women’s World Championship</h2>
-            <p class="subtitle">Top Division</p>
+        <div class="tournament-grid">
+            <a class="tournament-box" data-link="olympics-mens">Men</a>
+            <a class="tournament-box" data-link="olympics-womens">Women</a>
+        </div>
+    </section>
 
-            <div class="tournament-grid">
-                <div class="tournament-box">Groups</div>
-                <div class="tournament-box">Playoffs</div>
-            </div>
-        </section>
+</main>
 
-        <section class="tournament-card olympics">
-            <h2>Olympic Ice Hockey</h2>
-            <p class="subtitle">International Tournament</p>
+<footer class="site-footer">
+    <p>© IIHF Tournaments Project</p>
+</footer>
 
-            <div class="tournament-grid">
-                <div class="tournament-box">Men</div>
-                <div class="tournament-box">Women</div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <p>© IIHF Tournaments Project</p>
-    </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
