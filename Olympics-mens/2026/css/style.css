@@ -276,8 +276,10 @@ main h2 {
    Quarter-FINAL ALIGNMENT
 ======================= */
 
-.semi-finals .sf1,
-.semi-finals .sf2 {
+.quarter-finals .qf1,
+.quarter-finals .qf2,
+.quarter-finals .qf3,
+.quarter-finals .qf4 {
     margin-top: 60px;
 }
 /* =======================
@@ -298,6 +300,7 @@ main h2 {
     margin-top: 60px;
 
 }
+
 
 
 
