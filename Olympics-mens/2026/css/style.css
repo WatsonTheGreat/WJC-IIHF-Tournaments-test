@@ -172,124 +172,107 @@ main h2 {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* smooth scrolling on iPhone */
 }
-/* =======================
-   PLAYOFF BRACKET LAYOUT
-======================= */
+/*------------------------/
+/*-------Playoffs---------/
+/*------------------------/
+/* Only apply on the playoffs page */
+.playoffs-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-.playoffs-bracket {
+.playoffs-page header {
+    background-color: #004080;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.playoffs-page .hamburger {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.playoffs-page nav {
     display: flex;
-    gap: 32px;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #f0f0f0;
+    padding: 0.5rem 0;
 }
 
-/* Each round column */
-.playoffs-bracket .round,
-.playoffs-bracket .finals {
+.playoffs-page nav a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+}
+
+.playoffs-page .playoffs {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    gap: 2rem;
+    padding: 2rem;
+    overflow-x: auto;
 }
 
-/* Headings */
-.playoffs-bracket h3 {
-    margin-bottom: 6px;
-    font-size: 16px;
-    color: #0b4ea2;
-}
-
-/* Relegation under QFs */
-.playoffs-bracket .relegation {
-    flex-basis: 100%;
-    margin-top: 10px;
-}
-
-/* =======================
-   GAME BOX
-======================= */
-
-.playoffs-bracket .game,
-.playoffs-bracket .gold,
-.playoffs-bracket .bronze {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 10px;
-
-    border: 2px solid #0b4ea2;
-    border-radius: 6px;
-    background: #fff;
-
-    padding: 8px;
-    width: 350px;
-}
-
-/* =======================
-   LEFT: DATE / TIME
-======================= */
-
-.playoffs-bracket .datetime {
-    font-size: 15px;
-    color: #555;
-    line-height: 1.3;
-}
-
-/* =======================
-   RIGHT: TEAMS + SCORES
-======================= */
-
-.playoffs-bracket .teams {
+/* Each round is a column */
+.playoffs-page .round {
     display: flex;
     flex-direction: column;
-    gap: 6px;
-}
-
-/* Each team row */
-.playoffs-bracket .team-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* ← score higher */
-    gap: 8px;
-}
-
-/* Team name */
-.playoffs-bracket .team-name {
-    display: flex;
     align-items: center;
-    gap: 6px;
-    font-size: 14px;
 }
 
-/* Flags */
-.playoffs-bracket .team-name .flag {
-    width: 40px;
-    height: auto;
+.playoffs-page .round h3 {
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-/* Score */
-.playoffs-bracket .score {
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 1;
-    margin-top: -2px; /* subtle lift */
+/* Each game box */
+.playoffs-page .game {
+    background: #e0f0ff;
+    border: 2px solid #004080;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    width: 160px;
+    text-align: center;
+    position: relative;
 }
 
-/* =======================
-   SEMI-FINAL ALIGNMENT
-======================= */
-
-.semi-finals .sf1,
-.semi-finals .sf2 {
-    margin-top: 60px;
+/* Team and score styling */
+.playoffs-page .game .team {
+    font-weight: bold;
+    margin: 0.3rem 0;
 }
 
-/* =======================
-   FINALS ALIGNMENT
-======================= */
+.playoffs-page .game .score {
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+    color: #004080;
+}
 
-.finals .gold,
-.finals .bronze {
-    margin-top: 60px;
+/* Lines from Qualification → QF */
+.playoffs-page .round.qualification .game::after {
+    content: "";
+    position: absolute;
+    right: -2rem; /* space to next round */
+    top: 50%;
+    width: 2rem;
+    height: 2px;
+    background: #004080;
+}
 
+.playoffs-page .round.qualification .game:nth-child(odd)::after {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.playoffs-page .round.qualification .game:nth-child(even)::after {
+    top: 50%;
+    transform: translateY(-50%);
 }
 /* =======================
    FINAL STANDINGS PAGE
@@ -356,44 +339,3 @@ main h2 {
         font-size: 12px;
         padding: 6px;
     }
-/* =======================
-   QUALIFICATION → QF LINK
-======================= */
-
-.bracket-connection {
-    position: relative;
-    display: flex;
-    gap: 40px;
-}
-
-/* Horizontal line from qualification game */
-.qualification-game {
-    position: relative;
-}
-
-.qualification-game::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -40px;
-    width: 40px;
-    height: 2px;
-    background-color: #0b4ea2;
-}
-
-/* Vertical line down to quarter-final */
-.quarter-final-game {
-    position: relative;
-}
-
-.quarter-final-game::before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    left: -20px;
-    width: 2px;
-    height: 40px;
-    background-color: #0b4ea2;
-}
-
-}
