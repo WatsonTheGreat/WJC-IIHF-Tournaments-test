@@ -261,7 +261,7 @@ main h2 {
 
 /* Flags */
 .playoffs-bracket .team-name .flag {
-    width: 25px;
+    width: 30px;
     height: auto;
 }
 
@@ -291,6 +291,7 @@ main h2 {
     margin-top: 60px;
 
 }
+
 
 
 
