@@ -201,9 +201,9 @@ main h2 {
 /* =======================
    GAME BOX
 ======================= */
-.playoffs-page .playoffs-bracket .game,
-.playoffs-page .playoffs-bracket .gold,
-.playoffs-page .playoffs-bracket .bronze {
+.playoffs .playoffs-bracket .game,
+.playoffs .playoffs-bracket .gold,
+.playoffs .playoffs-bracket .bronze {
     display: grid;
     grid-template-columns: 100px 1fr;
     gap: 10px;
@@ -357,5 +357,6 @@ main h2 {
         font-size: 12px;
         padding: 6px;
     }
+
 
 
