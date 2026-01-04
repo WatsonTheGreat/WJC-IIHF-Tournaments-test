@@ -272,7 +272,14 @@ main h2 {
     line-height: 1;
     margin-top: -2px; /* subtle lift */
 }
+/* =======================
+   Quarter-FINAL ALIGNMENT
+======================= */
 
+.semi-finals .sf1,
+.semi-finals .sf2 {
+    margin-top: 60px;
+}
 /* =======================
    SEMI-FINAL ALIGNMENT
 ======================= */
@@ -291,6 +298,7 @@ main h2 {
     margin-top: 60px;
 
 }
+
 
 
 
