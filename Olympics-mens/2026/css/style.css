@@ -176,7 +176,7 @@ main h2 {
    PLAYOFF BRACKET LAYOUT
    Only apply on playoffs page
 ======================= */
-.playoffs-page .playoffs-bracket {
+.playoffs {
     display: flex;
     gap: 32px;
     align-items: flex-start;
@@ -184,15 +184,15 @@ main h2 {
 }
 
 /* Each round column */
-.playoffs-page .playoffs-bracket .round,
-.playoffs-page .playoffs-bracket .finals {
+.playoffs-page .round,
+.playoffs-page .finals {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
 /* Headings */
-.playoffs-page .playoffs-bracket h3 {
+.playoffs-page h3 {
     margin-bottom: 6px;
     font-size: 16px;
     color: #0b4ea2;
@@ -201,9 +201,9 @@ main h2 {
 /* =======================
    GAME BOX
 ======================= */
-.playoffs .playoffs-bracket .game,
-.playoffs .playoffs-bracket .gold,
-.playoffs .playoffs-bracket .bronze {
+.playoffs .game,
+.playoffs .gold,
+.playoffs .bronze {
     display: grid;
     grid-template-columns: 100px 1fr;
     gap: 10px;
@@ -219,7 +219,7 @@ main h2 {
 /* =======================
    LEFT: DATE / TIME
 ======================= */
-.playoffs-page .playoffs-bracket .datetime {
+.playoffs .datetime {
     font-size: 15px;
     color: #555;
     line-height: 1.3;
@@ -228,14 +228,14 @@ main h2 {
 /* =======================
    RIGHT: TEAMS + SCORES
 ======================= */
-.playoffs-page .playoffs-bracket .teams {
+.playoffs .teams {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
 /* Each team row */
-.playoffs-page .playoffs-bracket .team-row {
+.playoffs .team-row {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* score higher */
@@ -243,7 +243,7 @@ main h2 {
 }
 
 /* Team name */
-.playoffs-page .playoffs-bracket .team-name {
+.playoffs .team-name {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -251,13 +251,13 @@ main h2 {
 }
 
 /* Flags */
-.playoffs-page .playoffs-bracket .team-name .flag {
+.playoffs .team-name .flag {
     width: 40px;
     height: auto;
 }
 
 /* Score */
-.playoffs-page .playoffs-bracket .score {
+.playoffs .score {
     font-size: 15px;
     font-weight: normal;
     line-height: 1;
@@ -267,23 +267,23 @@ main h2 {
 /* =======================
    SEMI-FINAL ALIGNMENT
 ======================= */
-.playoffs-page .semi-finals .sf1,
-.playoffs-page .semi-finals .sf2 {
+.playoffs .semi-finals .sf1,
+.playoffs .semi-finals .sf2 {
     margin-top: 60px;
 }
 
 /* =======================
    FINALS ALIGNMENT
 ======================= */
-.playoffs-page .finals .gold,
-.playoffs-page .finals .bronze {
+.playoffs .finals .gold,
+.playoffs .finals .bronze {
     margin-top: 60px;
 }
 
 /* =======================
    LINE FROM QUALIFICATION → QF
 ======================= */
-.playoffs-page .round.qualification .game::after {
+.playoffs .round.qualification .game::after {
     content: "";
     position: absolute;
     right: -32px; /* line length to QF */
@@ -357,6 +357,7 @@ main h2 {
         font-size: 12px;
         padding: 6px;
     }
+
 
 
 
