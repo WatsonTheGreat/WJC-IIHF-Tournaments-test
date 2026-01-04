@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>IIHF Tournaments – Playoffs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/playoffs.css">
 </head>
-<body class="playoffs-page">
+<body>
 
 <header>
     <h1>IIHF Tournaments</h1>
@@ -17,311 +17,143 @@
     <a href="index.html">Group A</a>
     <a href="group-B.html">Group B</a>
     <a href="group-C.html">Group C</a>
-    <a href="playoffs.html">Playoffs</a>
+    <a href="playoffs.html" class="active">Playoffs</a>
     <a href="final.html">Final Standings</a>
 </nav>
 
 <main>
-    <h2>Playoff Round</h2>
+    <h2>Playoff Bracket</h2>
 
-    <div class="playoffs-bracket">
-        <div class="bracket-connection">
-            <div class="round Qualification-Playoff">
-                <h3>Qualification-Playoff</h3>
+    <div class="playoff-bracket">
 
-                <!-- Qualification game -->
-                <div class="game qualification-game">
-                    <div class="datetime">
-                        <div>Jan 2</div>
-                        <div>14:00</div>
-                    </div>
-            
-                    <div class="teams">
-                        <div class="team-row">
-                            <div class="team-name">Qualification Team A</div>
-                            <div class="score">–</div>
-                        </div>
-                        <div class="team-row">
-                            <div class="team-name">Qualification Team B</div>
-                            <div class="score">–</div>
-                        </div>
-                    </div>
+        <!-- Qualification Round -->
+        <div class="round qualification">
+            <h3>Qualification Round</h3>
+            <div class="game" data-round="qualification">
+                <div class="datetime"><span>Jan 2</span> <span>14:00</span></div>
+                <div class="teams">
+                    <div class="team home">Team A</div>
+                    <div class="team away">Team B</div>
                 </div>
-            
+                <div class="score">–</div>
             </div>
-            
-            <div class="round quarter-finals">
-            
-                <h3>Quarter-finals</h3>
-            
-                <!-- Quarter-final game (receives winner) -->
-                <div class="game quarter-final-game">
-                    <div class="datetime">
-                        <div>Jan 3</div>
-                        <div>16:00</div>
-                    </div>
-            
-                    <div class="teams">
-                        <div class="team-row">
-                            <div class="team-name">Winner QF Qualifier</div>
-                            <div class="score">–</div>
-                        </div>
-                        <div class="team-row">
-                            <div class="team-name">Pre-seeded Team</div>
-                            <div class="score">–</div>
-                        </div>
-                    </div>
+            <div class="game" data-round="qualification">
+                <div class="datetime"><span>Jan 2</span> <span>15:30</span></div>
+                <div class="teams">
+                    <div class="team home">Team C</div>
+                    <div class="team away">Team D</div>
                 </div>
-                <div class="round Qualification-Playoff">
-                
-
-                <!-- Qualification game -->
-                <div class="game qualification-game">
-                    <div class="datetime">
-                        <div>Jan 2</div>
-                        <div>14:00</div>
-                    </div>
-            
-                    <div class="teams">
-                        <div class="team-row">
-                            <div class="team-name">Qualification Team A</div>
-                            <div class="score">–</div>
-                        </div>
-                        <div class="team-row">
-                            <div class="team-name">Qualification Team B</div>
-                            <div class="score">–</div>
-                        </div>
-                    </div>
-                </div>
-            
+                <div class="score">–</div>
             </div>
-            
-            <div class="round quarter-finals">
-            
-                
-            
-                <!-- Quarter-final game (receives winner) -->
-                <div class="game quarter-final-game">
-                    <div class="datetime">
-                        <div>Jan 3</div>
-                        <div>16:00</div>
-                    </div>
-            
-                    <div class="teams">
-                        <div class="team-row">
-                            <div class="team-name">Winner QF Qualifier</div>
-                            <div class="score">–</div>
-                        </div>
-                        <div class="team-row">
-                            <div class="team-name">Pre-seeded Team</div>
-                            <div class="score">–</div>
-                        </div>
-                    </div>
+            <div class="game" data-round="qualification">
+                <div class="datetime"><span>Jan 2</span> <span>17:00</span></div>
+                <div class="teams">
+                    <div class="team home">Team E</div>
+                    <div class="team away">Team F</div>
                 </div>
-                <div class="round Qualification-Playoff">
-                
-
-                <!-- Qualification game -->
-                <div class="game qualification-game">
-                    <div class="datetime">
-                        <div>Jan 2</div>
-                        <div>14:00</div>
-                    </div>
-            
-                    <div class="teams">
-                        <div class="team-row">
-                            <div class="team-name">Qualification Team A</div>
-                            <div class="score">–</div>
-                        </div>
-                        <div class="team-row">
-                            <div class="team-name">Qualification Team B</div>
-                            <div class="score">–</div>
-                        </div>
-                    </div>
-                </div>
-            
+                <div class="score">–</div>
             </div>
-            
-            <div class="round quarter-finals">
-            
-                
-            
-                <!-- Quarter-final game (receives winner) -->
-                <div class="game quarter-final-game">
-                    <div class="datetime">
-                        <div>Jan 3</div>
-                        <div>16:00</div>
-                    </div>
-            
-                    <div class="teams">
-                        <div class="team-row">
-                            <div class="team-name">Winner QF Qualifier</div>
-                            <div class="score">–</div>
-                        </div>
-                        <div class="team-row">
-                            <div class="team-name">Pre-seeded Team</div>
-                            <div class="score">–</div>
-                        </div>
-                    </div>
+            <div class="game" data-round="qualification">
+                <div class="datetime"><span>Jan 2</span> <span>18:30</span></div>
+                <div class="teams">
+                    <div class="team home">Team G</div>
+                    <div class="team away">Team H</div>
                 </div>
-                <div class="round Qualification-Playoff">
-                
-
-                <!-- Qualification game -->
-                <div class="game qualification-game">
-                    <div class="datetime">
-                        <div>Jan 2</div>
-                        <div>14:00</div>
-                    </div>
-            
-                    <div class="teams">
-                        <div class="team-row">
-                            <div class="team-name">Qualification Team A</div>
-                            <div class="score">–</div>
-                        </div>
-                        <div class="team-row">
-                            <div class="team-name">Qualification Team B</div>
-                            <div class="score">–</div>
-                        </div>
-                    </div>
-                </div>
-            
+                <div class="score">–</div>
             </div>
-            
-            <div class="round quarter-finals">
-            
-                
-            
-                <!-- Quarter-final game (receives winner) -->
-                <div class="game quarter-final-game">
-                    <div class="datetime">
-                        <div>Jan 3</div>
-                        <div>16:00</div>
-                    </div>
-            
-                    <div class="teams">
-                        <div class="team-row">
-                            <div class="team-name">Winner QF Qualifier</div>
-                            <div class="score">–</div>
-                        </div>
-                        <div class="team-row">
-                            <div class="team-name">Pre-seeded Team</div>
-                            <div class="score">–</div>
-                        </div>
-                    </div>
-                </div>
+        </div>
 
+        <!-- Quarter-finals -->
+        <div class="round quarter-finals">
+            <h3>Quarter-finals</h3>
+            <div class="game">
+                <div class="datetime"><span>Jan 3</span> <span>14:00</span></div>
+                <div class="teams">
+                    <div class="team home">Winner QF1</div>
+                    <div class="team away">Seeded Team 1</div>
+                </div>
+                <div class="score">–</div>
+            </div>
+            <div class="game">
+                <div class="datetime"><span>Jan 3</span> <span>15:30</span></div>
+                <div class="teams">
+                    <div class="team home">Winner QF2</div>
+                    <div class="team away">Seeded Team 2</div>
+                </div>
+                <div class="score">–</div>
+            </div>
+            <div class="game">
+                <div class="datetime"><span>Jan 3</span> <span>17:00</span></div>
+                <div class="teams">
+                    <div class="team home">Winner QF3</div>
+                    <div class="team away">Seeded Team 3</div>
+                </div>
+                <div class="score">–</div>
+            </div>
+            <div class="game">
+                <div class="datetime"><span>Jan 3</span> <span>18:30</span></div>
+                <div class="teams">
+                    <div class="team home">Winner QF4</div>
+                    <div class="team away">Seeded Team 4</div>
+                </div>
+                <div class="score">–</div>
             </div>
         </div>
 
         <!-- Semi-finals -->
         <div class="round semi-finals">
             <h3>Semi-finals</h3>
-
-            <div class="game sf1">
-                <div class="datetime">
-                    <div>Jan 3</div>
-                    <div>16:00</div>
-                </div>
+            <div class="game">
+                <div class="datetime"><span>Jan 4</span> <span>16:00</span></div>
                 <div class="teams">
-                    <div class="team-row">
-                        <div class="team-name">–</div>
-                        <div class="score">–</div>
-                    </div>
-                    <div class="team-row">
-                        <div class="team-name">–</div>
-                        <div class="score">–</div>
-                    </div>
+                    <div class="team home">Winner QF1</div>
+                    <div class="team away">Winner QF2</div>
                 </div>
+                <div class="score">–</div>
             </div>
-
-            <div class="game sf2">
-                <div class="datetime">
-                    <div>Jan 3</div>
-                    <div>19:00</div>
-                </div>
+            <div class="game">
+                <div class="datetime"><span>Jan 4</span> <span>19:00</span></div>
                 <div class="teams">
-                    <div class="team-row">
-                        <div class="team-name">–</div>
-                        <div class="score">–</div>
-                    </div>
-                    <div class="team-row">
-                        <div class="team-name">–</div>
-                        <div class="score">–</div>
-                    </div>
+                    <div class="team home">Winner QF3</div>
+                    <div class="team away">Winner QF4</div>
                 </div>
+                <div class="score">–</div>
             </div>
         </div>
 
         <!-- Finals -->
-        <div class="finals">
+        <div class="round finals">
             <h3>Finals</h3>
-
             <div class="game gold">
-                <div class="datetime">
-                    <div>Jan 4</div>
-                    <div>18:00</div>
-                </div>
+                <div class="datetime"><span>Jan 5</span> <span>18:00</span></div>
                 <div class="teams">
-                    <div class="team-row">
-                        <div class="team-name">–</div>
-                        <div class="score">–</div>
-                    </div>
-                    <div class="team-row">
-                        <div class="team-name">–</div>
-                        <div class="score">–</div>
-                    </div>
+                    <div class="team home">Winner SF1</div>
+                    <div class="team away">Winner SF2</div>
                 </div>
+                <div class="score">–</div>
             </div>
-
             <div class="game bronze">
-                <div class="datetime">
-                    <div>Jan 4</div>
-                    <div>15:00</div>
-                </div>
+                <div class="datetime"><span>Jan 5</span> <span>15:00</span></div>
                 <div class="teams">
-                    <div class="team-row">
-                        <div class="team-name">–</div>
-                        <div class="score">–</div>
-                    </div>
-                    <div class="team-row">
-                        <div class="team-name">–</div>
-                        <div class="score">–</div>
-                    </div>
+                    <div class="team home">Loser SF1</div>
+                    <div class="team away">Loser SF2</div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Relegation -->
-        <div class="round relegation">
-            <h3>Relegation Game</h3>
-            <div class="game">
-                <div class="datetime">
-                    <div>Jan 2</div>
-                    <div>11:30</div>
-                </div>
-                <div class="teams">
-                    <div class="team-row">
-                        <div class="team-name"><img src="images/flags/Germany.png" class="flag"></div>
-                        <div class="score">–</div>
-                    </div>
-                    <div class="team-row">
-                        <div class="team-name"><img src="images/flags/Latvia.png" class="flag"></div>
-                        <div class="score">–</div>
-                    </div>
-                </div>
+                <div class="score">–</div>
             </div>
         </div>
 
     </div>
 </main>
 
-<script src="js/playoffs.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+
+    hamburger.addEventListener("click", () => {
+        menu.classList.toggle("open");
+    });
+});
+</script>
 </body>
 </html>
-
-
-
-
-
-
