@@ -356,4 +356,44 @@ main h2 {
         font-size: 12px;
         padding: 6px;
     }
+/* =======================
+   QUALIFICATION → QF LINK
+======================= */
+
+.bracket-connection {
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+
+/* Horizontal line from qualification game */
+.qualification-game {
+    position: relative;
+}
+
+.qualification-game::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    width: 40px;
+    height: 2px;
+    background-color: #0b4ea2;
+}
+
+/* Vertical line down to quarter-final */
+.quarter-final-game {
+    position: relative;
+}
+
+.quarter-final-game::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    width: 2px;
+    height: 40px;
+    background-color: #0b4ea2;
+}
+
 }
