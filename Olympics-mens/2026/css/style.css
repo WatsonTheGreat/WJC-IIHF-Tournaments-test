@@ -285,20 +285,24 @@ main h2 {
    SEMI-FINAL ALIGNMENT
 ======================= */
 
-.semi-finals .sf1,
-.semi-finals .sf2 {
+.semi-finals .sf1 {
     margin-top: 60px;
+}
+.semi-finals .sf2 {
+    margin-top: 240px;
 }
 
 /* =======================
    FINALS ALIGNMENT
 ======================= */
 
-.finals .gold,
-.finals .bronze {
+.finals .gold {
     margin-top: 60px;
-
 }
+.finals .bronze {
+    margin-top: 240px;
+}
+
 
 
 
