@@ -212,7 +212,7 @@ main h2 {
 .playoffs-bracket .gold,
 .playoffs-bracket .bronze {
     display: grid;
-    grid-template-columns: 75px 1fr;
+    grid-template-columns: 100px 1fr;
     gap: 10px;
 
     border: 2px solid #0b4ea2;
@@ -291,6 +291,7 @@ main h2 {
     margin-top: 60px;
 
 }
+
 
 
 
