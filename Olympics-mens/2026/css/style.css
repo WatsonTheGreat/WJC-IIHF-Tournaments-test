@@ -338,7 +338,16 @@ main h2 {
 }
 
 /* Vertical connector into Quarter-finals */
-.quarter-finals .game::before {
+.quarter-finals .qf1 .game::before {
+    content: "";
+    position: absolute;
+    left: 55.5%;
+    top: -10px;
+    width: 2px;
+    height: 120px;
+    background-color: #0b4ea2;
+}
+.quarter-finals .qf2 .game::before {
     content: "";
     position: absolute;
     left: 55.5%;
@@ -347,6 +356,25 @@ main h2 {
     height: 120px;
     background-color: #0b4ea2;
 }
+.quarter-finals .qf3 .game::before {
+    content: "";
+    position: absolute;
+    left: 55.5%;
+    top: -60px;
+    width: 2px;
+    height: 120px;
+    background-color: #0b4ea2;
+}
+.quarter-finals .qf4 .game::before {
+    content: "";
+    position: absolute;
+    left: 55.5%;
+    top: -60px;
+    width: 2px;
+    height: 120px;
+    background-color: #0b4ea2;
+}
+
 
 
 
