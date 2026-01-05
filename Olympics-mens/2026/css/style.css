@@ -198,12 +198,6 @@ main h2 {
     color: #0b4ea2;
 }
 
-/* Relegation under QFs */
-.playoffs-bracket .relegation {
-    flex-basis: 100%;
-    margin-top: 10px;
-}
-
 /* =======================
    GAME BOX
 ======================= */
@@ -353,7 +347,7 @@ main h2 {
     left: 56%;
     top: 100%;
     width: 2px;
-    height: 18px;
+    height: 34px;
     background-color: #0b4ea2;
 }
 .quarter-finals .qf3::before {
@@ -362,7 +356,7 @@ main h2 {
     left: 56%;
     top: 100%;
     width: 2px;
-    height: 17px;
+    height: 34px;
     background-color: #0b4ea2;
 }
 .quarter-finals .qf4::before {
@@ -371,7 +365,7 @@ main h2 {
     left: 56%;
     top: 100%;
     width: 2px;
-    height: 16px;
+    height: 34px;
     background-color: #0b4ea2;
 }
 /* =======================
@@ -440,6 +434,7 @@ main h2 {
         padding: 6px;
     }
 }
+
 
 
 
