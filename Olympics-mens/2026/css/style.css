@@ -341,8 +341,8 @@ main h2 {
 .quarter-finals .qf1::before {
     content: "";
     position: absolute;
-    left: 55.5%;
-    top: -10px;
+    left: 56%;
+    top: 100%;
     width: 2px;
     height: 120px;
     background-color: #0b4ea2;
@@ -350,7 +350,7 @@ main h2 {
 .quarter-finals .qf2::before {
     content: "";
     position: absolute;
-    left: 55.5%;
+    left: 56%;
     top: -60px;
     width: 2px;
     height: 120px;
@@ -368,12 +368,13 @@ main h2 {
 .quarter-finals .qf4::before {
     content: "";
     position: absolute;
-    left: 55.5%;
+    left: 56%;
     top: -60px;
     width: 2px;
     height: 120px;
     background-color: #0b4ea2;
 }
+
 
 
 
