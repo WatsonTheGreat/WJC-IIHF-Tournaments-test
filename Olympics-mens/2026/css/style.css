@@ -341,9 +341,10 @@ main h2 {
 .quarter-finals .game::before {
     content: "";
     position: absolute;
-    middle: -50px;
+    middle: -00px;
     top: -60px;
     width: 2px;
     height: 120px;
     background-color: #0b4ea2;
 }
+
