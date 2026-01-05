@@ -342,7 +342,7 @@ main h2 {
     content: "";
     position: absolute;
     left: 55.5%;
-    top: 100%;
+    top: 0%;
     width: 2px;
     height: 120px;
     background-color: #0b4ea2;
@@ -374,6 +374,7 @@ main h2 {
     height: 120px;
     background-color: #0b4ea2;
 }
+
 
 
 
