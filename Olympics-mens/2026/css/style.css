@@ -303,14 +303,14 @@ main h2 {
 /* =======================
    FINALS ALIGNMENT
 ======================= */
-.finals .text .gold {
-    margin-top:10px;
+.finals .gext {
+    margin-top: 20px;
 }
 .finals .gold {
     margin-top: 0px;
 }
-.finals .text .bronze {
-    margin-top:220px;
+.finals .bext {
+    margin-top: 220px;
 }
 .finals .bronze {
     margin-top: 0px;
@@ -439,6 +439,7 @@ main h2 {
         padding: 6px;
     }
 }
+
 
 
 
