@@ -340,13 +340,13 @@ main h2 {
 /* Vertical connector into Quarter-finals */
 .quarter-finals .game::before {
     content: "";
-    position: absolute;
     left: -10px;
     top: -60px;
     width: 2px;
     height: 120px;
     background-color: #0b4ea2;
 }
+
 
 
 
