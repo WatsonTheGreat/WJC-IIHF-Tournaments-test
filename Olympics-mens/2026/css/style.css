@@ -327,8 +327,8 @@ main h2 {
     content: "";
     position: absolute;
     top: 50%;
-    right: -200px;
-    width: 200px;
+    right: -175px;
+    width: 175px;
     height: 2px;
     background-color: #0b4ea2;
 }
@@ -343,6 +343,7 @@ main h2 {
     height: 120px;
     background-color: #0b4ea2;
 }
+
 
 
 
