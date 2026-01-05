@@ -312,6 +312,37 @@ main h2 {
 .finals .bronze {
     margin-top: 240px;
 }
+/* =======================
+   QUALIFICATION → QF LINES
+======================= */
+
+/* Allow positioning */
+.qualification .game,
+.quarter-finals .game {
+    position: relative;
+}
+
+/* Horizontal line from Qualification games */
+.qualification .game::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -32px;
+    width: 32px;
+    height: 2px;
+    background-color: #0b4ea2;
+}
+
+/* Vertical connector into Quarter-finals */
+.quarter-finals .game::before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: -60px;
+    width: 2px;
+    height: 120px;
+    background-color: #0b4ea2;
+}
 
 
 
