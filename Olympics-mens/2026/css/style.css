@@ -273,6 +273,16 @@ main h2 {
     margin-top: -2px; /* subtle lift */
 }
 /* =======================
+   Qualification round ALIGNMENT
+======================= */
+
+.qualification .qr1,
+.qualification .qr2,
+.qualification .qr3,
+.qualification .qr4 {
+    margin-top: 60px;
+}
+/* =======================
    Quarter-FINAL ALIGNMENT
 ======================= */
 
@@ -302,3 +312,4 @@ main h2 {
 .finals .bronze {
     margin-top: 240px;
 }
+
