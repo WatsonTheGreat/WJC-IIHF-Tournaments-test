@@ -344,7 +344,7 @@ main h2 {
     left: 56%;
     top: 100%;
     width: 2px;
-    height: 35px;
+    height: 33px;
     background-color: #0b4ea2;
 }
 .quarter-finals .qf2::before {
@@ -374,6 +374,7 @@ main h2 {
     height: 120px;
     background-color: #0b4ea2;
 }
+
 
 
 
