@@ -188,7 +188,7 @@ main h2 {
 .playoffs-bracket .finals {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 30px;
 }
 
 /* Headings */
@@ -312,4 +312,5 @@ main h2 {
 .finals .bronze {
     margin-top: 240px;
 }
+
 
