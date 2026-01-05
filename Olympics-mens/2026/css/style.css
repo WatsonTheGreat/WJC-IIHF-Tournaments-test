@@ -286,8 +286,12 @@ main h2 {
    Quarter-FINAL ALIGNMENT
 ======================= */
 
-.quarter-finals .qf2,
-.quarter-finals .qf3,
+.quarter-finals .qf2 {
+    margin-top: 60px;
+}
+.quarter-finals .qf3 {
+    margin-top: 60px;
+}
 .quarter-finals .qf4 {
     margin-top: 60px;
 }
@@ -343,6 +347,7 @@ main h2 {
     height: 120px;
     background-color: #0b4ea2;
 }
+
 
 
 
