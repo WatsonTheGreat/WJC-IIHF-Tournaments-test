@@ -338,7 +338,7 @@ main h2 {
 }
 
 /* Vertical connector into Quarter-finals */
-.quarter-finals .qf1 .game::before {
+.quarter-finals .qf1::before {
     content: "";
     position: absolute;
     left: 55.5%;
@@ -347,7 +347,7 @@ main h2 {
     height: 120px;
     background-color: #0b4ea2;
 }
-.quarter-finals .qf2 .game::before {
+.quarter-finals .qf2::before {
     content: "";
     position: absolute;
     left: 55.5%;
@@ -356,7 +356,7 @@ main h2 {
     height: 120px;
     background-color: #0b4ea2;
 }
-.quarter-finals .qf3 .game::before {
+.quarter-finals .qf3::before {
     content: "";
     position: absolute;
     left: 55.5%;
@@ -365,7 +365,7 @@ main h2 {
     height: 120px;
     background-color: #0b4ea2;
 }
-.quarter-finals .qf4 .game::before {
+.quarter-finals .qf4::before {
     content: "";
     position: absolute;
     left: 55.5%;
@@ -374,6 +374,7 @@ main h2 {
     height: 120px;
     background-color: #0b4ea2;
 }
+
 
 
 
