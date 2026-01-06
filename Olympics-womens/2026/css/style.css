@@ -188,7 +188,7 @@ main h2 {
 .playoffs-bracket .finals {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
 }
 
 /* Headings */
@@ -196,6 +196,12 @@ main h2 {
     margin-bottom: 6px;
     font-size: 16px;
     color: #0b4ea2;
+}
+
+/* Relegation under QFs */
+.playoffs-bracket .relegation {
+    flex-basis: 100%;
+    margin-top: 10px;
 }
 
 /* =======================
@@ -214,7 +220,7 @@ main h2 {
     background: #fff;
 
     padding: 8px;
-    width: 250px;
+    width: 350px;
 }
 
 /* =======================
@@ -255,7 +261,7 @@ main h2 {
 
 /* Flags */
 .playoffs-bracket .team-name .flag {
-    width: 30px;
+    width: 40px;
     height: auto;
 }
 
@@ -266,112 +272,24 @@ main h2 {
     line-height: 1;
     margin-top: -2px; /* subtle lift */
 }
-/* =======================
-   Qualification round ALIGNMENT
-======================= */
 
-.qualification .qr1,
-.qualification .qr2,
-.qualification .qr3,
-.qualification .qr4 {
-    margin-top: 60px;
-}
-/* =======================
-   Quarter-FINAL ALIGNMENT
-======================= */
-
-.quarter-finals .qf2 {
-    margin-top: 60px;
-}
-.quarter-finals .qf3 {
-    margin-top: 60px;
-}
-.quarter-finals .qf4 {
-    margin-top: 60px;
-}
 /* =======================
    SEMI-FINAL ALIGNMENT
 ======================= */
 
-.semi-finals .sf1 {
-    margin-top: 60px;
-}
+.semi-finals .sf1,
 .semi-finals .sf2 {
-    margin-top: 240px;
+    margin-top: 60px;
 }
 
 /* =======================
    FINALS ALIGNMENT
 ======================= */
-.finals .gext {
-    margin-top: 25px;
-}
-.finals .gold {
-    margin-top: 0px;
-}
-.finals .bext {
-    margin-top: 210px;
-}
+
+.finals .gold,
 .finals .bronze {
-    margin-top: 0px;
-}
-/* =======================
-   QUALIFICATION → QF LINES
-======================= */
+    margin-top: 60px;
 
-/* Allow positioning */
-.qualification .game,
-.quarter-finals .game {
-    position: relative;
-}
-
-/* Horizontal line from Qualification games */
-.qualification .game::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -175px;
-    width: 175px;
-    height: 2px;
-    background-color: #0b4ea2;
-}
-
-/* Vertical connector into Quarter-finals */
-.quarter-finals .qf1::before {
-    content: "";
-    position: absolute;
-    left: 56%;
-    top: 100%;
-    width: 2px;
-    height: 34px;
-    background-color: #0b4ea2;
-}
-.quarter-finals .qf2::before {
-    content: "";
-    position: absolute;
-    left: 56%;
-    top: 100%;
-    width: 2px;
-    height: 34px;
-    background-color: #0b4ea2;
-}
-.quarter-finals .qf3::before {
-    content: "";
-    position: absolute;
-    left: 56%;
-    top: 100%;
-    width: 2px;
-    height: 34px;
-    background-color: #0b4ea2;
-}
-.quarter-finals .qf4::before {
-    content: "";
-    position: absolute;
-    left: 56%;
-    top: 100%;
-    width: 2px;
-    height: 34px;
-    background-color: #0b4ea2;
 }
 /* =======================
    FINAL STANDINGS PAGE
