@@ -102,5 +102,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // MAKE Game ROWS CLICKABLE (TEAM GAMES)
+    document.querySelectorAll("tr[data-game]").forEach(row => {
+        row.style.cursor = "pointer";
+
+        row.addEventListener("click", () => {
+            const team = row.dataset.team;
+            if (!team) return;
+
+            // Go to teams folder (same level as group pages)
+            window.location.href = `teams/${team}.html`;
+        });
+    });
+
 
 });
+
