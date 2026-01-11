@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         row.addEventListener("click", () => {
             const game = row.dataset.game;
-            if (!team) return;
+            if (!game) return;
 
             // Go to teams folder (same level as group pages)
             window.location.href = `games/${game}.html`;
@@ -117,5 +117,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
