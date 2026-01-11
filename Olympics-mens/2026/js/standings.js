@@ -107,14 +107,15 @@ document.addEventListener("DOMContentLoaded", () => {
         row.style.cursor = "pointer";
 
         row.addEventListener("click", () => {
-            const team = row.dataset.team;
+            const game = row.dataset.game;
             if (!team) return;
 
             // Go to teams folder (same level as group pages)
-            window.location.href = `teams/${team}.html`;
+            window.location.href = `games/${game}.html`;
         });
     });
 
 
 });
+
 
