@@ -440,6 +440,36 @@ main h2 {
     }
 }
 
+//Goals
+.goals {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.goals th,
+.goals td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.goals th {
+    background-color: #ffffff;
+    color: Black;
+    font-weight: bold;
+}
+
+.goals tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.goals tr:hover {
+    background-color: #e3ecff;
+}
+
 
 
 
