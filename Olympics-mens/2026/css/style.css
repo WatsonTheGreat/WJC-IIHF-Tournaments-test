@@ -440,41 +440,63 @@ main h2 {
     }
 }
 
-//Goals
+/* =======================
+   GOALS TABLE
+======================= */
+
 .goals {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 30px;
-    background-color: white;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
+/* Table cells */
 .goals th,
 .goals td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 9px 10px;
     text-align: center;
     font-size: 14px;
 }
 
+/* Header row */
 .goals th {
-    background-color: #ffffff;
-    color: Black;
+    background-color: #0b4ea2;   /* IIHF blue */
+    color: #ffffff;
     font-weight: bold;
 }
 
+/* Zebra striping */
 .goals tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f6f8fb;
 }
 
-.goals tr:hover {
-    background-color: #e3ecff;
+/* Hover effect */
+.goals tbody tr:hover {
+    background-color: #e8f0ff;
+    transition: background-color 0.15s ease-in-out;
 }
 
+/* First column (player name or rank) */
+.goals td:first-child {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 12px;
+}
 
+/* Numeric columns tighter */
+.goals td:not(:first-child) {
+    white-space: nowrap;
+}
 
-
-
-
-
-
-
+/* Mobile optimization */
+@media (max-width: 600px) {
+    .goals th,
+    .goals td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
